@@ -19,3 +19,19 @@ these activities.
 
 More information about the files can be found in the README.MD
 
+### Files not used in this project
+
+All files in the Inertial Signals folders were not used. 
+
+###Processing steps
+
+1. Merged all data into one dataset where apropriate column headers where added.
+2. Removed all columns that did not have the names std() or mean(). This gave me 66 columns to which I added the subjectID and activities columns.
+3. The activities column was converted from an integer to a string via the factor function
+4. A tidy dataset was created containing the mean of each feature for each subject and each activity.
+
+
+
+
+
+
