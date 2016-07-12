@@ -17,5 +17,5 @@ these activities.
 * y_train.txt: 7532 integers. 1 integer for row in each X_test.txt.
 * activity_lables.txt: 6 activities performed. Text explaining y_train.txt and y_test.txt
 
-
+More information about the files can be found in the README.MD
 
