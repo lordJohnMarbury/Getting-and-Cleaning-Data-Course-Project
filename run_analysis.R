@@ -5,18 +5,30 @@ library(reshape2)
 # step 1: Merges the training and the test sets to create one data set
 
 
-dir <-"C:/Users/fredrik.kjellman/Coursera/R/week4/"
+#dir <-"C:/Users/fredrik.kjellman/Coursera/R/week4/"
 
 # read the datafiles
 
-subject_train <- read.table(paste0(dir, "train/subject_train.txt"))
-subject_test <- read.table(paste0(dir, "test/subject_test.txt"))
-xTrain <- read.table(paste0(dir, "train/X_train.txt"))
-xTest <- read.table(paste0(dir, "test/X_test.txt"))
-yTrain <- read.table(paste0(dir, "train/y_train.txt"))
-yTest <- read.table(paste0(dir, "test/Y_test.txt"))
+# subject_train <- read.table(paste0(dir, "train/subject_train.txt"))
+# subject_test <- read.table(paste0(dir, "test/subject_test.txt"))
+# xTrain <- read.table(paste0(dir, "train/X_train.txt"))
+# xTest <- read.table(paste0(dir, "test/X_test.txt"))
+# yTrain <- read.table(paste0(dir, "train/y_train.txt"))
+# yTest <- read.table(paste0(dir, "test/Y_test.txt"))
+# features <- read.table(paste0(dir, "features.txt")) [,2]
 
-features <- read.table(paste0(dir, "features.txt")) [,2]
+
+subject_train <- read.table("train/subject_train.txt")
+subject_test <- read.table("test/subject_test.txt")
+xTrain <- read.table("train/X_train.txt")
+xTest <- read.table("test/X_test.txt")
+yTrain <- read.table("train/y_train.txt")
+yTest <- read.table("test/Y_test.txt")
+features <- read.table("features.txt") [,2]
+
+
+
+
 
 
 # add column name for test and train subject files
