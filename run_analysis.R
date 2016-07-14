@@ -58,5 +58,5 @@ combined_stdmean$activities <-factor(combined_stdmean$activities, labels = c("Wa
 melted <- melt(combined_stdmean, id=c("subjectID","activities"))
 tidy <- dcast(melted, subjectID+activities ~ variable, mean)
 
-
+write.csv(tidy, file = "tidy.txt", row.names = FALSE)
 
